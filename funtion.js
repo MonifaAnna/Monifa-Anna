@@ -14,4 +14,9 @@ document.addEventListener("mousemove",(e) => {
     clearTimeout(timeout);
     timeout = setTimeout(mouseStopped,1000);
 })
+// -------------preloader------------
+var loader = document.getElementById("preloader")
 
+window.addEventListener("load",function(){
+    loader.style.display = "none"
+})
