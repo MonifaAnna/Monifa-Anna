@@ -1,0 +1,86 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    min-height: 100vh;
+    background: url(./img/Digital\ Art\ Alive\ \(1\).jpeg);
+}
+
+.first-sec{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: #feffff;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 
+    0 0 20px #feffff,
+    0 0 60px #feffff,
+    0 0 100px #feffff;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even){
+    background:#302dff;
+    box-shadow:
+    0 0 20px #302dff,
+    0 0 60px #302dff,
+    0 0 100px #302dff;
+}
+@keyframes animate {
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+/* --------------carsor------------ */
+
+.cursor{
+    z-index: 999;
+    position: fixed;
+    background:#e82626;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+    pointer-events: none;
+    box-shadow: 0 0 20px #e82626,
+                0 0 60px   #e82626,
+                0 0 100px #e82626;
+    animation: colors 5s infinite;            
+}
+@keyframes colors{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+/* .carsor:before{
+content: '';
+position:absolute;
+background: #e82626;
+width: 50px;
+height: 50px;
+opacity: 0.2;
+transform: translate(-30%,-30%);
+border-radius: 50%;
+} */
