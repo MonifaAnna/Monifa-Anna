@@ -148,24 +148,39 @@
                 <div class="d-flex col-lg-6">
                     <img src="img/logoo.png" class="logo" alt="">
                 </div>
-                <div class="navbtn col-lg-6 ">
-                    <div class="d-lg-none d-sm-block">
-                    <button class="btn btn-primary" style="margin-top:-35vw;" type="text" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">See More</button>
-
-                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                      <div class="offcanvas-header bg-black">
-                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
-                        <button type="button" class="btn-close bg-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                      </div>
-                      <div class="offcanvas-body bg-black">
-                        <a class="nav-link " aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="#">Pricing</a>
-                        <a class="nav-link" href="#">Pricing</a>
+                <nav class="navbar navbar-expand-lg bg-transparent d-block d-lg-none">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"></a>
+                      <button class="navbar-toggler" style="background-color: #d70676;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" style="background-color: rgb(2, 2, 55);" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                </div>
-                    <button class="nav-btn d-none d-lg-block">open to work</button>
+                  </nav>
+                <div class="navbtn col-lg-6 d-none d-lg-block ">
+                    
+                    <a href="#" class="btn-nav">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Hire Me
+                    </a>
                 </div>
              
             </div>
@@ -190,7 +205,7 @@
                   </div>
                 </div>
               </nav>
-            <div>
+            <div class="text-div">
                <p class="text">I'm Monifa</p>
                <p class="text">Creative Frontend<br>
                 Developer.</p>
@@ -201,11 +216,12 @@
     </section>
    
     </section>
+    <div class="carsor">
+    </div>
     <!-- ---------------second-sec------------------- -->
 
-    <section class="second-sec d-flex">
-        <div class="carsor">
-        </div>
+    <section class="second-sec ">
+       
    <div class="col-lg-3 second-div-1">
     <p class="text-light seccond-text1">Selected Works</p>
     <p class=" h5 second-text2 ">I've played a key role in developing impactful projects. Here's a curated selection showcasing my expertise and the achieved results</p>
@@ -286,7 +302,7 @@
         </section>
          <!-- ---------------end of -third-sec-------------------- -->
         <!-- ---------------four sec----------------- -->
-        <section class="four-sec">
+        <section class="four-sec d-lg-block d-none">
          
             </div>
           
@@ -314,6 +330,70 @@
                     </div>
                 </div>
             </div>
+        </section>
+            <!-- ---------------end of four-sec-------------------- -->
+        <!-- ---------------five--sec----------------- -->
+        <section class="sec-five">
+       <div>
+        <p class="five-text1"> My Experience</p>
+       </div>
+       <div class="five-divv" style="margin-top: 9vw;">
+       <div class="d-flex five-div">
+        <div class="five-text3">
+            <p class="fs-1">Senior Frontend Developer</p>
+            <p class="text-secondary">Lorem, ipsum dolor.</p>
+        </div>
+        <div class="five-div2">
+            <p >January 2022 - September 2023
+                Remote</p>
+                <p class="text-secondary">Lorem, ipsum dolor.</p>
+        </div>
+       </div>
+       <div class="d-flex five-div">
+        <div class="five-text3">
+            <p class="fs-1 five-text2">Senior Frontend Developer</p>
+            <p class="text-secondary">Lorem, ipsum dolor.</p>
+        </div>
+        <div class="five-div2">
+            <p >January 2022 - September 2023
+                Remote</p>
+                <p class="text-secondary">Lorem, ipsum dolor.</p>
+        </div>
+       </div>
+       <div class="d-flex five-div">
+        <div class="five-text3">
+            <p class="fs-1">Senior Frontend Developer</p>
+            <p class="text-secondary">Lorem, ipsum dolor.</p>
+        </div>
+        <div class="five-div2">
+            <p >January 2022 - September 2023
+                Remote</p>
+                <p class="text-secondary">Lorem, ipsum dolor.</p>
+        </div>
+       </div>
+ 
+      </div>
+     
+        </section>
+                    <!-- ---------------end of five-sec-------------------- -->
+        <!-- ---------------six--sec----------------- -->
+        <section class="sec-six d-flex">
+          <div class="six-div2">
+        <img src="./img/java.png" style="height: 100%; border-radius: 15px;" alt="">
+          </div>
+          <div class="six-div">
+            <h3>Monifa Akter</h3>
+            <h6>Senior Frontend Developer</h6>
+            <p>I am Yasin, a senior frontend developer with over 7 years of professional experience. Successfully building user-friendly websites with ReactJS & NextJS. I pay attention to small details, enjoy technical problems, and work well in teams. I like learning new technologies and always aim to improve my skills</p>.
+            
+            <p>yasin@yasingenc.net</p>
+            <p>Seattle, WA</p>
+            <p>WORK EXPERIENCE</p>
+            <p>Senior Frontend Developer | TenTwenty Digital Agency</p>
+            <p>UI & Frontend Developer | Denge Bilgisayar</p>
+            
+          </div>
+          
         </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="funtion.js"></script>
