@@ -459,3 +459,15 @@ background-size: 100%;
     color:transparent;
     -webkit-text-stroke:1px #0637d7;
 }
+.plus1{
+    width: 10px;
+    height: 45px;
+    border: 2px dashed #d70676;
+}
+.plus2{
+    width: 50px;
+    height: 10px;
+    border: 2px dashed #d70676;
+    margin-left: -3vh;
+    margin-top: -4vh;
+}
