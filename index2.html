@@ -7,7 +7,7 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            background-color: rgb(237, 153, 153);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -44,11 +44,71 @@ opacity: 0.2;
 transform: translate(-30%,-30%);
 border-radius: 50%;
 }
+h2{
+width: 300px;
+height: 300px;
+border: 3px solid black;
+}
+.slider{
+    height: 250px;
+    margin:auto;
+    position: relative;
+    width:90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.slider-track{
+    display: flex;
+    width:calc(250px * 18);
+    animation: scroll 40s linear infinite;
+}
+@keyframes  scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}
+.slide{
+    
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+img{
+    width: 100%;
+    transition: transform 1s;
+    margin-right: -10vw;
+    margin-bottom: -10vw;
+}
+img:hover{
+    transform: translateZ(20px);
+}
     </style>
 </head>
 <body>
     <div class="cursor">
     </div>
+    
+    <div class="slider">
+        <div class="slider-track">
+            <div class="slide"><img src="Screenshot_5.png" alt=""></div>
+            <div class="slide"><img src="Screenshot_5.png" alt=""></div>
+            <div class="slide"><img src="Screenshot_5.png" alt=""></div>
+            <div class="slide"><img src="Screenshot_5.png" alt=""></div>
+            <div class="slide"><img src="Screenshot_5.png" alt=""></div>
+            <div class="slide"><img src="Screenshot_5.png" alt=""></div>
+            <div class="slide"><img src="Screenshot_5.png" alt=""></div>
+            <div class="slide"><img src="Screenshot_5.png" alt=""></div>
+            <div class="slide"><img src="Screenshot_5.png" alt=""></div>
+            <div class="slide"><img src="Screenshot_5.png" alt=""></div>
+
+        </div>
+    </div>
+    
     <script>
         const cursor = document.querySelector(".cursor");
     document.addEventListener("mousemove",(e) => {
@@ -67,6 +127,29 @@ function mouseStopped(){
 clearTimeout(timeout);
 timeout = setTimeout(mouseStopped,1000);
 })
+    </script>
+    <script>
+        const races =document.querySelector(".races");
+        let racesWidth = races.offsetWidth;
+        let amountToScroll = racesWidth - window.innerWidth;
+
+        const tween = gsap.to(races,{
+            x: -amountToScroll,
+            duration:3,
+            ease: "none"
+        })
+
+ScrollTrigger.create({
+    trigger:".racesWrapper",
+    start:"top 20%",
+    end:"+=" + amountToScroll,
+    pin:true,
+    animation:tween,
+    scrub:1,
+    markers:true
+})
+
+
     </script>
 </body>
 </html>
