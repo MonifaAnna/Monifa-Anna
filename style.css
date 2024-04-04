@@ -35,6 +35,13 @@ body
         width: 100%;
         height: 100vh;
     }
+    .link1{
+        color:white;
+        font-size: 20px;
+    }
+    .link1:hover{
+        color:#d70676
+    }
     .bubbles{
         position: relative;
         display: flex;
@@ -161,7 +168,7 @@ body
     position: fixed;
     background: rgb(0, 0, 0) url(./img/preloading.gif) no-repeat center center;
     background-size: 10%;
-    z-index: 100;
+    z-index:100;
 }
 .logo{
     width: 80px;
@@ -695,18 +702,25 @@ background-size: 100%;
     display: grid;
     place-items: center;
     overflow: hidden;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+    animation-play-state: running;
 }
 .slider-track{
+    width: fit-content;
     display: flex;
-    width:calc(250px * 18);
-    animation: scroll 40s linear infinite;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marqueee 10s linear infinite;
 }
-@keyframes  scroll {
-    0%{
-        transform: translateX(0);
+@keyframes marqueee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
     }
-    100%{
-        transform: translateX(calc(-250px * 9));
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
     }
 }
 .slide1{
@@ -1430,7 +1444,7 @@ background-size: 100%;
     }
     .resume{
         text-align: center; 
-        margin-top: 5vw;
+        margin-top: 8vw;
     }
     .resume-btn{ 
         position: absolute;
@@ -1529,7 +1543,7 @@ background-size: 100%;
         }
     }
     .link-div{
-        margin-top: 14vw;
+        margin-top: 17vw;
         margin-left: 35vw;
     }
     .linkin{
@@ -2002,3 +2016,44 @@ height: 500px;
     margin-left: 5vw;
     margin-top: 2vw;
 }
+
+/* marque */
+
+
+
+.marquee {
+    position: relative;
+    overflow: hidden;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+    animation-play-state: running;
+}
+
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 5s linear infinite;
+}
+
+.marquee span {
+    font-size: 10vw;
+    padding: 0 2vw;
+}
+
+/* .marquee:hover .marquee__inner {
+    animation-play-state: running;
+} */
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}
+
