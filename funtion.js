@@ -47,3 +47,5 @@
           clickable: true,
         },
       });
+    //   animationnnnnnnnnnnnn........................
+        AOS.init();

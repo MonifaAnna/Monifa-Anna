@@ -4,8 +4,7 @@ body
     padding: 0;
     box-sizing: border-box;
    font-family: Arial, Helvetica, sans-serif;
- overflow-x: hidden;
-
+    overflow-x: hidden;
 }
 /* auto zoom animation */
 /* <div>
@@ -40,7 +39,11 @@ body
         font-size: 20px;
     }
     .link1:hover{
-        color:#d70676
+        color: white;
+        width: 130px;
+        height: 40px;
+        background-color:#d70676;
+        border-radius: 10px;
     }
     .bubbles{
         position: relative;
@@ -81,7 +84,21 @@ body
         }
     }
 }
-
+.small-nav{
+    padding-left: 40%;
+    width: 800px;
+}
+.linkk{
+    color: white;
+}
+.linkk:hover{
+    color: white;
+    width: 150px;
+    height: 40px;
+    background-color: #d70676;
+    border-radius: 10px;
+    padding-left: 6vw;
+}
 /* -----------first-section--------- */
 @media only screen and (max-width:768px){
     .main{
@@ -196,7 +213,7 @@ body
 }
 .btn-nav{ 
     position: absolute;
-  margin-left: 35vw;
+    margin-left: 35vw;
     transform: translate(-50%,50%);
     font-size: 25px;
     color:white;
@@ -291,6 +308,7 @@ body
         transform: translateY(-100%);
     }
 }
+
 /* .navbtn{
    display: flex;
    justify-content: end;
@@ -484,7 +502,7 @@ body
             width: 450px;
             padding: 15px;
             perspective: 100px;
-            
+            margin-top: 5vw;
             margin: 15px;
             background-color:rgba(245, 222, 179, 0.402);
            border-radius: 30px;
@@ -499,8 +517,8 @@ body
             width: 450px;
             padding: 15px;
             perspective: 100px;
-            
-            margin: 15px;
+            margin-top: 5vw;
+            margin-left: 15px;
             background-color:rgba(252, 164, 0, 0.477);
            border-radius: 30px;
            transition: transform 1s;
@@ -514,14 +532,13 @@ body
             width: 450px;
             padding: 15px;
             perspective: 100px;
-        
-            margin: 15px;
+            margin-top: 5vw;
+            margin-left: 15px;
             background-color:rgb(1, 1, 1);
            border-radius: 30px;
            transition: transform 1s;
         }
         .slide3:hover{
-        
             transform: scale(1.2);
         }
         .slide4{
@@ -529,14 +546,13 @@ body
             width: 450px;
             padding: 15px;
             perspective: 100px;
-           
-            margin: 15px;
+            margin-top: 5vw;
+            margin-left: 15px;
             background-color:rgb(13, 78, 1);
            border-radius: 30px;
            transition: transform 1s;
         }
         .slide4:hover{
-        
             transform: scale(1.2);
         }
         .slide5{
@@ -544,8 +560,8 @@ body
             width: 450px;
             padding: 15px;
             perspective: 100px;
-           
-            margin: 15px;
+            margin-top: 5vw;
+            margin-left: 15px;
             background-color:rgba(235, 24, 24, 0.669);
            border-radius: 30px;
            transition: transform 1s;
@@ -1186,6 +1202,42 @@ background-size: 100%;
     margin-left: -3vh;
     margin-top: -4vh;
 }
+/* marque */
+.marquee {
+    position: relative;
+    overflow: hidden;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+    animation-play-state: running;
+}
+
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 5s linear infinite;
+}
+
+.marquee span {
+    font-size: 10vw;
+    padding: 0 2vw;
+}
+
+/* .marquee:hover .marquee__inner {
+    animation-play-state: running;
+} */
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}
 
 /* -------------section-five------------- */
  @media only screen and (min-width:769px){
@@ -1227,7 +1279,7 @@ background-size: 100%;
     border-bottom: 1px solid #f5089e;
 }
 .five-div2{
-    margin-left: 35vw;
+    margin-left: 48vw;
 }
 } 
 @media only screen and (max-width:768px){
@@ -1271,7 +1323,13 @@ background-size: 100%;
     border-bottom: 1px solid #f5089e;
 }
 .five-div2{
-  margin-left: 15vw;
+  margin-left: 27vw;
+}
+.f-div2{
+    margin-left: 23vw;
+}
+.f-dive3{
+    margin-left: 31vw;
 }
 }
 /* -------------six-section------------ */
@@ -1431,6 +1489,10 @@ background-size: 100%;
         border-radius: 10px;
         transform: rotate(-7deg);
         padding: 2vw;
+        
+    }
+    .six-div:hover{
+        margin-left: -34%;
     }
     .six-div2{
         width: 380px;
@@ -1865,8 +1927,100 @@ background-size: 100%;
 }
 }
   /* -------------contact----------- */
+  @media only screen and (min-width:769px){
+    .contact-sec{
+        height:1400px;
+        width: 100%;
+        background:rgb(1, 1, 48);
+     
+      }
+      .contact-div1{
+        margin-left: 92%;
+        width: 1px;
+        height: 1px;
+        padding-top: 10vw;
+        background-color: rgba(255, 0, 187, 0.402);
+        box-shadow: 20px 100px 200px 200px rgba(255, 0, 187, 0.468);
+    }
+    .col-div1{
+        margin-left: 10vw;
+        width: 500px;
+        height: 500px;
+       
+    }
+    .col-divv{
+        margin-left: 40%;
+         margin-top: 10vw;
+    }
+    .col-text{
+        font-size: 5vw;
+        font-weight: 600;
+    }
+    .col-div2{
+    margin-left: 15vw;
+    width: 500px;
+    height: 500px;
+    }
+    
+    .input-1{
+        width: 480px;
+        height: 50px;
+        border-radius: 10px;
+        margin-top: 3vh;
+        background-color: transparent;
+        color: #d70676;
+        font-size: 20px;
+        border: 1px solid #d70676;
+    }
+    .input-1:hover{
+        background-color: #f5089e49;
+    }
+    .input-2{
+        background-color: transparent;
+        width: 480px;
+        font-size: 20px;
+        height: 190px;
+        border-radius: 10px;
+        margin-top: 3vh;
+        border: 1px solid #d70676;
+    }
+    .input-2:hover{
+        background-color: #f5089e49;
+    }
+    .front1{
+        font-size: 3vw;
+        margin-left:vw;
+        color: white;
+    }
+    .front2{
+        font-size: 3vw;
+        margin-left: 2vw;
+        color: white;
+    }
+    .logo2{
+        width: 80px;
+        height: 80px;
+        animation : spin2 5s linear infinite
+    }
+    @keyframes spin2 {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform:rotate(360deg);
+        }
+    }
+    
+    .logo2{
+        width: 120px;
+        height: 120px;
+        margin-left: 5vw;
+        margin-top: 2vw;
+    }
+  }
+  @media only screen and (max-width:768px){
   .contact-sec{
-    height:1400px;
+    height:auto;
     width: 100%;
     background:rgb(1, 1, 48);
  
@@ -1878,6 +2032,84 @@ background-size: 100%;
     padding-top: 10vw;
     background-color: rgba(255, 0, 187, 0.402);
     box-shadow: 20px 100px 200px 200px rgba(255, 0, 187, 0.468);
+}
+.col-div1{
+    margin-left: 33vw;
+    width: 500px;
+    height: 500px;
+  
+}
+.col-divv{
+    margin-left: 32%;
+   
+     padding-bottom: 10vw;
+}
+.col-text{
+    font-size: 5vw;
+    font-weight: 600;
+}
+.col-div2{
+    margin-top: -25vw;
+    margin-left: 15vw;
+    width: 500px;
+    height: 500px;
+}
+
+.input-1{
+    width: 480px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 3vh;
+    background-color: transparent;
+    color: #d70676;
+    font-size: 20px;
+    border: 1px solid #d70676;
+}
+.input-1:hover{
+    background-color: #f5089e49;
+}
+.input-2{
+    background-color: transparent;
+    width: 480px;
+    font-size: 20px;
+    height: 190px;
+    border-radius: 10px;
+    margin-top: 3vh;
+    border: 1px solid #d70676;
+}
+.input-2:hover{
+    background-color: #f5089e49;
+}
+.front1{
+    font-size: 3vw;
+    margin-left:vw;
+    color: white;
+}
+.front2{
+    font-size: 3vw;
+    margin-left: 2vw;
+    color: white;
+}
+.logo2{
+    width: 80px;
+    height: 80px;
+    animation : spin2 5s linear infinite
+}
+@keyframes spin2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.logo2{
+    width: 120px;
+    height: 120px;
+    margin-left: 5vw;
+    margin-top: 2vw;
+}
 }
 /* ----------star falling ------------- */
 /* .contact-sec span{
@@ -1945,115 +2177,4 @@ background-size: 100%;
     animation-duration: 1.5s;
 
 } */
-.col-div1{
-    margin-left: 10vw;
-    width: 500px;
-    height: 500px;
-   
-}
-.col-text{
-    font-size: 5vw;
-    font-weight: 600;
-}
-.col-div2{
-margin-left: 15vw;
-width: 500px;
-height: 500px;
-}
-
-.input-1{
-    width: 480px;
-    height: 50px;
-    border-radius: 10px;
-    margin-top: 3vh;
-    background-color: transparent;
-    color: #d70676;
-    font-size: 20px;
-    border: 1px solid #d70676;
-}
-.input-1:hover{
-    background-color: #f5089e49;
-}
-.input-2{
-    background-color: transparent;
-    width: 480px;
-    font-size: 20px;
-    height: 190px;
-    border-radius: 10px;
-    margin-top: 3vh;
-    border: 1px solid #d70676;
-}
-.input-2:hover{
-    background-color: #f5089e49;
-}
-.front1{
-    font-size: 3vw;
-    margin-left:vw;
-    color: white;
-}
-.front2{
-    font-size: 3vw;
-    margin-left: 2vw;
-    color: white;
-}
-.logo2{
-    width: 80px;
-    height: 80px;
-    animation : spin2 5s linear infinite
-}
-@keyframes spin2 {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform:rotate(360deg);
-    }
-}
-
-.logo2{
-    width: 120px;
-    height: 120px;
-    margin-left: 5vw;
-    margin-top: 2vw;
-}
-
-/* marque */
-
-
-
-.marquee {
-    position: relative;
-    overflow: hidden;
-    --offset: 20vw;
-    --move-initial: calc(-25% + var(--offset));
-    --move-final: calc(-50% + var(--offset));
-    animation-play-state: running;
-}
-
-.marquee__inner {
-    width: fit-content;
-    display: flex;
-    position: relative;
-    transform: translate3d(var(--move-initial), 0, 0);
-    animation: marquee 5s linear infinite;
-}
-
-.marquee span {
-    font-size: 10vw;
-    padding: 0 2vw;
-}
-
-/* .marquee:hover .marquee__inner {
-    animation-play-state: running;
-} */
-
-@keyframes marquee {
-    0% {
-        transform: translate3d(var(--move-initial), 0, 0);
-    }
-
-    100% {
-        transform: translate3d(var(--move-final), 0, 0);
-    }
-}
 

@@ -9,6 +9,7 @@
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8f33cc90db.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -137,7 +138,7 @@
      <!-- ----cursor------------ -->
             <div class="cursor">
             </div>
-            <div class="d-none">
+            <!-- <div class="d-none">
             
             <iframe width="560" height="315" src="https://www.youtube.com/embed/4PJ7dhz2HfQ?si=aGdj0Nwc6xHOVAOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/4PJ7dhz2HfQ?si=aGdj0Nwc6xHOVAOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -146,7 +147,7 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/4PJ7dhz2HfQ?si=aGdj0Nwc6xHOVAOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/4PJ7dhz2HfQ?si=aGdj0Nwc6xHOVAOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div> -->
+        </div>  -->
         <!-- -----text----------- -->
         <div>
             <!-- -----navbar -->
@@ -154,25 +155,28 @@
                 <div class="d-flex col-lg-6">
                     <img src="img/logoo.png" class="logo" alt="">
                 </div>
-                <nav class="navbar navbar-expand-lg bg-transparent d-block d-lg-none">
+                <nav class="navbar small-nav navbar-expand-lg bg-transparent d-block d-lg-none">
                     <div class="container-fluid">
                       <a class="navbar-brand" href="#"></a>
                       <button class="navbar-toggler" style="background-color: #d70676;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
-                      <div class="collapse navbar-collapse" style="background-color: rgb(2, 2, 55);" id="navbarNav">
+                      <div class="collapse small-nav navbar-collapse" style="background-color: rgb(2, 2, 55);" id="navbarNav">
                         <ul class="navbar-nav">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link linkk" href="#works">Works</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link linkk" href="#skills">Skills</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link linkk" href="#experience"> Experience</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link linkk" href="#resume">Resume</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link linkk" href="#contact">Contact</a>
                           </li>
                         </ul>
                       </div>
@@ -200,13 +204,13 @@
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-product ">
                     <div class="navbar-nav">
-                      <a class="nav-link link1 " aria-current="page" href="#">Works
+                      <a class="nav-link link1 " aria-current="page" href="#works">Works
                      </a>
-                      <a class="nav-link link1" href="#">Skills
+                      <a class="nav-link link1" href="#skills">Skills
                       </a>
-                      <a class="nav-link link1" href="#"> Experience</a>
-                      <a class="nav-link link1" href="#">Resume</a>
-                      <a class="nav-link link1" href="#">Contact</a>
+                      <a class="nav-link link1" href="#experience"> Experience</a>
+                      <a class="nav-link link1" href="#resume">Resume</a>
+                      <a class="nav-link link1" href="#contact">Contact</a>
                     </div>
                     </div>
                 
@@ -214,11 +218,10 @@
                   </div>
                 </div>
               </nav>
-            <div class="text-div">
+            <div class="text-div"  data-aos="zoom-in">
                <p class="text">I'm Monifa</p>
-               <p class="text">Creative Frontend<br>
-                Developer.</p>
-                <p class="text-2">I develop accessible, responsive, interactive, and<br> animated websites with a strong focus on performance.</p>
+               <p class="text">Creative Website<br> Designer.</p>
+                <p class="text-2">I design accessible, responsive, interactive, and<br> animated websites with a strong focus on performance.</p>
             </div>
         </div>
        
@@ -229,11 +232,11 @@
     </div>
     <!-- ---------------second-sec------------------- -->
 
-    <section class="second-sec ">
+    <section class="second-sec" id="works">
        
-   <div class="col-lg-3 second-div-1">
-    <p class="text-light seccond-text1">Selected Works</p>
-    <p class=" h5 second-text2 ">I've played a key role in developing impactful projects. Here's a curated selection showcasing my expertise and the achieved results</p>
+   <div  data-aos="fade-right"  class="col-lg-3 second-div-1">
+    <p class="text-light seccond-text1" style="font-weight: 600;">Selected Works</p>
+    <p class=" h5 second-text2 ">I've played a key role in designing impactful projects. Here's a curated selection showcasing my expertise and the achieved results</p>
   <div>
     <a href="#" class="btnn">
         <span></span>
@@ -258,16 +261,16 @@
             </div>
         <div class="slide2">
             <div class="d-flex">
-                <p style="font-size: 20px;color:white">Blue Marmaid</p>
-                <a href="#" style="margin-left:15vw;text-decoration: none;color:white" class="site-link">Visit Site</a>
+                <p style="font-size: 17px;color:white">Blue Marmaid</p>
+                <a href="#" style="margin-left:8vw;text-decoration:none;color:white" class="site-link">Visit Site</a>
             </div>
           
             <img src="Screenshot_14.png" alt="">
         </div>
         <div class="slide3">
             <div class="d-flex">
-                <p style="font-size: 26px; color:white">TimeZone</p>
-                <a href="#" style="margin-left:15vw;text-decoration: none;color:white" class="site-link">Visit Site</a>
+                <p style="font-size: 17px; color:white">TimeZone</p>
+                <a href="#" style="margin-left:12vw;text-decoration: none;color:white" class="site-link">Visit Site</a>
             </div>
           <img src="Screenshot_9.png" alt=""></div>
         <div class="slide4">
@@ -287,9 +290,9 @@
     </section>
         <!-- ---------------end of second-sec------------------- -->
         <!-- ---------------third-sec------------------- -->
-        <section class="third-sec">
+        <section class="third-sec" id="skills">
             <div>
-                <h1 class="text-light text-third">My Skills</h1>
+                <h1 data-aos="fade-right" class="text-light text-third">My Skills</h1>
             </div>
             <div class="main-third">
                 <div class="third-div1"> <img src="./img/html.png" class="htmll" alt=""></div>
@@ -299,8 +302,8 @@
                 <div class="third-div5"><img src="./img/wp.png" class="wp" alt=""></div>
             </div>
             <div class="third-text">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing<br> elit. Totam repellat ex, suscipit saepe qui dolor!</p>
+               <p>HTML, CSS, Bootstrap, and JavaScript expert <br>offering dynamic and visually stunning web solutions.</p>
+               <p class="d-lg-block d-sm-none">Proficient in WordPress, adept at crafting customized and user-friendly websites.</p>
             </div>
             <div class="middle-div">
                 <div class="tiny-circle"></div>
@@ -312,9 +315,6 @@
          <!-- ---------------end of -third-sec-------------------- -->
         <!-- ---------------four sec----------------- -->
         <section class="four-sec d-lg-block d-none">
-         
-            </div>
-          
             <div class="marquee" style="padding-top: 27vw;">
               <div class=" marquee__inner ">
                   <div class="slide d-flex m-5 p-5">
@@ -342,45 +342,43 @@
         </section>
             <!-- ---------------end of four-sec-------------------- -->
         <!-- ---------------five--sec----------------- -->
-        <section class="sec-five">
+        <section class="sec-five" id="experience">
           <div class="div-five"></div>
           <div class="div2-five">
-       <div>
+       <div  data-aos="zoom-in" >
         <p class="five-text1"> My Experience</p>
+        <p class="text-secondary" style="margin-left: 9vw;">I designed 10+ website.Here some of them.....</p>
        </div>
        <div class="five-divv" style="margin-top: 9vw;">
-       <div class="d-flex five-div">
+       <div data-aos="fade-right" class="d-flex five-div">
         <div class="five-text3">
-            <p class="five-text2">Senior Frontend Developer</p>
-            <p class="text-secondary">Lorem, ipsum dolor.</p>
+            <p class="five-text2">Food Website </p>
+            <p class="text-secondary">I designed Blue Marmaid website</p>
         </div>
-        <div class="five-div2">
-            <p >January 2022 - September 2023
-                Remote</p>
-                <p class="text-secondary">Lorem, ipsum dolor.</p>
+        <div class="five-div2 f-div2">
+            <p >Using with html,css,bootsrap</p>
+            <p class="text-secondary">attractive with animation</p>
         </div>
        </div>
        <div class="d-flex five-div">
-        <div class="five-text3">
-            <p class=" five-text2">Senior Frontend Developer</p>
-            <p class="text-secondary">Lorem, ipsum dolor.</p>
+        <div  class="five-text3" data-aos="fade-right">
+            <p class=" five-text2">Salon website</p>
+            <p class="text-secondary">I designed hair salon website</p>
         </div>
         <div class="five-div2">
-            <p >January 2022 - September 2023
-                Remote</p>
-                <p class="text-secondary">Lorem, ipsum dolor.</p>
-        </div>
+          <p >Using with html,css,bootsrap</p>
+          <p class="text-secondary">attractive with animation</p>
+      </div>
        </div>
        <div class="d-flex five-div">
-        <div class="five-text3">
-            <p class="five-text2">Senior Frontend Developer</p>
-            <p class="text-secondary">Lorem, ipsum dolor.</p>
+        <div class="five-text3" data-aos="fade-right">
+            <p class="five-text2">Watch Website</p>
+            <p class="text-secondary">I designed watch website</p>
         </div>
-        <div class="five-div2">
-            <p >January 2022 - September 2023
-                Remote</p>
-                <p class="text-secondary">Lorem, ipsum dolor.</p>
-        </div>
+        <div class="five-div2 f-dive3">
+          <p >Using with html,css,bootsrap</p>
+          <p class="text-secondary">attractive with animation</p>
+      </div>
        </div>
  
       </div>
@@ -388,19 +386,18 @@
         </section>
                     <!-- ---------------end of five-sec-------------------- -->
         <!-- ---------------six--sec----------------- -->
-        <section class="sec-six ">
+        <section class="sec-six" id="resume">
           <div class="d-flex six-divv">
           <div class="six-div2">
         <img src="./img/java.png" style="height: 100%; border-radius: 15px;" alt="">
           </div>
-          <div class="six-div">
-            <h3>Monifa Akter</h3>
-            <h6>Senior Frontend Developer</h6>
-            <p>I am Yasin, a senior frontend developer with over 7 years of professional experience. Successfully building user-friendly websites with ReactJS & NextJS. I pay attention to small details, enjoy technical problems, and work well in teams. I like learning new technologies and always aim to improve my skills</p>.
-            <p>yasin@yasingenc.net</p>
-            <p>Seattle, WA</p>
-            <p>WORK EXPERIENCE</p>
-            <p>Senior Frontend Developer | TenTwenty Digital Agency</p>
+          <div class="six-div" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+            <h3 class="text-danger">Monifa Akter</h3>
+            <h6>Web Designer</h6>
+            <p>"I am a creative web designer with a passion for crafting visually appealing and user-friendly digital experiences. With a keen eye for detail and a deep understanding of design principles, I specialize in translating client visions into engaging websites that resonate with audiences. Proficient in HTML, CSS, and JavaScript, I am dedicated to staying updated on emerging trends and technologies to deliver innovative solutions. Collaborative by nature, I excel in working closely with clients to achieve their goals and exceed expectations."</p>
+            <p>monifa@gmail.com</p>
           </div>
         </div>
         <div class="resume" >
@@ -425,7 +422,7 @@
           <div style="padding-top: 20vw;"></div>
           <div class="seven-div1"></div>
           <div class="d-flex">
-            <h1 class="seven-text1">My Photo Journal</h1>
+            <h1 class="seven-text1" data-aos="zoom-in-up">My Photo Journal</h1>
             <div class="seven-btn-div">
               <a href="#" class="seven-btn">
                 <span></span>
@@ -474,7 +471,7 @@
         </section>
              <!-- ---------------end of seven-sec-------------------- -->
         <!-- ---------------contact-sec----------------- -->
-        <section class="contact-sec">
+        <section class="contact-sec" id="contact">
           <!-- star falling -->
           <!-- <div>
             <span></span>
@@ -495,7 +492,9 @@
       
           <div class="contact-div1"></div>
           <div class="row">
-            <div class="col-lg-6 col-div1">
+            <div class="col-lg-6 col-div1" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               <p class="col-text text-light">Get In Touch</p>
               <p class="fs-4 text-light mt-5">monifa@gmail.com</p>
                 <div class="mt-5"> 
@@ -504,24 +503,29 @@
                   <i class="fa-brands front2  fa-linkedin"></i>
                   <i class="fa-brands front2  fa-square-twitter"></i>
                 </div>
-        
             </div>
-            <div class="col-lg-6 col-div2">
+            <div class="col-lg-6 col-div2" data-aos="fade-left">
+           
               <input type="name" class="input-1" value="" placeholder="Name"><br>
               <input type="text" class="input-1" value="" placeholder="Email"><br>
               <input type="message" class="input-2" value="" placeholder="Message"><br>
               <input type="button" class="input-1" value="Send" placeholder="Send"><br>
             </div>
           </div>
-          <div style="margin-left: 40%; margin-top: 10vw;">
+          <div class="col-divv" data-aos="fade-up"
+          data-aos-duration="2000">
             <img src="./img/logoo.png" class="logo2" alt="">
             <p class="text-secondary"style="margin-top: 17vw;margin-left:5vw">© 2024 Monifa Akter</p>
             <p class="text-secondary">Powered by  Html,Css,Bootsrap,js,and GitHub.</p>
-            <p class="text-secondary ps-5 ms-3">Taraboniyarchor,Cox's Bazar</p>
-            <p class="fs-5" style="margin-left: -30%; margin-top: 3vw; color: #d70676;">  If you help someone, Allah helps you. Supplicating for someone is a beautiful way to aide your fellow believer.</p>
-          </div>
-       
+            <p class="text-secondary ps-4 d-lg-none d-sm-block">Taraboniyarchor,Cox's Bazar</p>
+            <p class="text-secondary ps-5 ms-4  d-lg-block d-sm-none">Taraboniyarchor,Cox's Bazar</p>
+            <p class="fs-5 d-lg-block d-sm-none" style="margin-left: -30%; margin-top: 3vw; color: #d70676;">  If you help someone, Allah helps you. Supplicating for someone is a beautiful way to aide your fellow believer.</p>
+            <div class="d-lg-none d-sm-block">
+              <p class="fs-5" style="margin-left: -35%; margin-top: 8vw; color: #d70676;"><span style="margin-left:15vw ;"> If you help someone, Allah helps you. </span> <br>Supplicating for someone is a beautiful way to aide your fellow believer.</p>
+            </div>
+            </div>
         </section>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="funtion.js"></script>
